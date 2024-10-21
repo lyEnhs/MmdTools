@@ -10,12 +10,22 @@
 #include <Base/UnicodeUtil.h>
 
 #include "viewer/ly_viewer.h"
+#include "ViewerCommand.h"
+
+void ReadInitParameterFromJson(lyenhs::LyViewer::InitializeParameter initParam, std::vector<lyenhs::ViewerCommand>&	viewerCommands)
+{
+
+}
 
 int MMDViewerMain(const std::vector<std::string>& args)
 {
-	SABA_INFO("Let'go!!!");
+	SABA_INFO("Let'begin!!!");
 
+	lyenhs::LyViewer::InitializeParameter	viewerInitParam;
+	std::vector<lyenhs::ViewerCommand>	viewerCommands;
 	lyenhs::LyViewer viewer;
+
+	ReadInitParameterFromJson(viewerInitParam, viewerCommands);
 
 	if (!viewer.Initialize())
 	{
