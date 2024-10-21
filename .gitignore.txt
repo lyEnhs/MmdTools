@@ -1,3 +1,2 @@
-#gitignore
 .vs
 bin
