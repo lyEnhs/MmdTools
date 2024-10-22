@@ -1,0 +1,8 @@
+# 忽略 Visual Studio 的配置文件夹
+.vs/
+
+# 忽略 MmdTools 的编译输出
+MmdTools/x64/
+
+# 忽略二进制文件
+bin/
