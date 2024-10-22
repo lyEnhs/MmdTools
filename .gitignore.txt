@@ -1,3 +1,0 @@
-.vs/
-MmdTools/x64/
-bin/
